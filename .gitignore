@@ -24,3 +24,5 @@ models/
 drive/
 .DS_Store
 Thumbs.db
+Kannada_News_Trust_Analyser_MuRIL_backup.ipynb
+clean_notebook.py
