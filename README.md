@@ -20,21 +20,20 @@ The system uses **Google MuRIL (Multilingual Representations for Indian Language
 - Model evaluation using accuracy, F1-score, and confusion matrix
   
   ## System Workflow
-
-  Text Input ────────────────┐
-                          │
+Text Input ────────────────┐
+                           │
 Speech Input → Whisper ────┤
-                          ▼
-Image Input → EasyOCR ──→ Kannada Text
-                          │
-                          ▼
-                    MuRIL Model
-                          │
-                          ▼
+                           ▼
+Image Input → EasyOCR ───→ Kannada Text
+                           │
+                           ▼
+                      MuRIL Model
+                           │
+                           ▼
               Neutral / Offensive / Biased
   
 
-Technologies Used:
+##Technologies Used:
 
 - Python
 - PyTorch
@@ -48,7 +47,7 @@ Technologies Used:
 - gTTS
 - Matplotlib
 - Seaborn
-Dataset:
+##Dataset:
 
 The project uses a Kannada news headline dataset stored in:  data/kannada_news_headlines.csv
 The dataset is processed and used to train and evaluate the classification model.
@@ -58,7 +57,7 @@ google/muril-base-cased
 
 The model is fine-tuned for three-class Kannada news classification.
 
-Project Structure:
+##Project Structure:
 
 Kannada-News-Trust-Analyser/
 │
@@ -70,7 +69,7 @@ Kannada-News-Trust-Analyser/
 ├── README.md
 └── .gitignore
 
-How to Run:
+##How to Run:
 
 The project is developed using Google Colab and is recommended to be run with a GPU runtime.
 1. Open the notebook in Google Colab.
@@ -79,7 +78,7 @@ The project is developed using Google Colab and is recommended to be run with a 
 4. Run the preprocessing and training cells.
 5. Evaluate the trained model.
 6. Use the text, speech, or image input options for classification.
-Evaluation
+##Evaluation
 The model is evaluated using:
 - Accuracy
 - Precision
@@ -87,7 +86,7 @@ The model is evaluated using:
 - F1-score
 - Confusion Matrix
   
-Future Enhancements:
+##Future Enhancements:
 
 - Support for additional Indian languages
 - Larger and more diverse datasets
